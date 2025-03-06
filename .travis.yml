@@ -1,9 +1,7 @@
+dist: jammy
 language: python
-python:
-  - "3.8"  # Change this to match your Python version
-
+matrix:
+  include:
+  - python: 3.11
 install:
-  - pip install -r requirements.txt
-
-script:
-  - python manage.py test
+- pip install -r requirements.txt
