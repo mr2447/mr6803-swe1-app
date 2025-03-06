@@ -2,6 +2,6 @@ dist: jammy
 language: python
 matrix:
   include:
-  - python: 3.11
+  - python3: 3.11
 install:
 - pip install -r requirements.txt
